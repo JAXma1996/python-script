@@ -1,4 +1,5 @@
 # python-script
+**PYTHO_VERISON : 3.7**
 将平时使用到的Python脚本，以及常用shell的Python版本
 
 ## 目录
