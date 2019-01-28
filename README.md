@@ -4,5 +4,5 @@
 
 ## 目录
 ### 文本处理类：
-
+#### [根据ip正则匹配日志关键字并统计](https://github.com/JAXma1996/python-script/blob/master/text-processing/findIpInFile.py)
 ### 常用linux脚本：
