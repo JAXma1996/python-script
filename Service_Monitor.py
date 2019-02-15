@@ -21,6 +21,7 @@ _cpu_judge_times_in_inteval = 3
 _cpu_use_queue = queue.Queue(_cpu_judge_interval)
 
 
+
 def send_email(message):
     smtp = smtplib.SMTP()
     smtp.connect('smtp.exmail.qq.com')
@@ -48,6 +49,16 @@ def judge_cpu_status(allJson,msg):
             _cpu_use_queue.put(int(now_time))
             _cpu_judge_interval -= 1
         print(cpuUse)
+
+
+def judge_application_status(allJson ,msg):
+    processlist = allJson['processlist']
+    for processItem in processlist :
+        if processItem["name"] == 'java':
+            commonLine = processItem['commonline']
+            for item in commonLine :
+                if item == 'ifaaaaaa':
+
 
 
 def get_api_info_by_trgg():
